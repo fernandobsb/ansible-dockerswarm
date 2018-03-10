@@ -1,27 +1,19 @@
 ---
 
 galaxy_info:
-  author: Andrea Tosatto
-  description: Setup a Docker Swarm Cluster on Centos/RHEL, Ubuntu/Debian.
+  author: Marcel Esser, Andrea Tosatto
+  description: Setup a Docker Swarm Cluster on Ubuntu/Debian.
   min_ansible_version: 2.3
   license: MIT
-  issue_tracker_url: https://github.com/atosatto/ansible-dockerswarm/issues
+  issue_tracker_url: https://github.com/messer/ansible-dockerswarm/issues
 
   platforms:
-    - name: EL
-      versions:
-        - 7
     - name: Ubuntu
       versions:
-        - trusty
-        - utopic
-        - vivid
-        - wily
         - xenial
     - name: Debian
       versions:
-        - etch
-        - jessie
+        - stretch
   galaxy_tags:
     - docker
     - swarm
