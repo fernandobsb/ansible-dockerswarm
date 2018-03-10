@@ -10,8 +10,6 @@ def test_docker_repository_exists(File, SystemInfo):
     dist = SystemInfo.distribution
     if dist == 'debian' or dist == 'ubuntu':
         f = File('/etc/apt/sources.list.d/docker.list')
-    if dist == 'redhat' or dist == 'centos' or dist == 'fedora':
-        f = File('/etc/yum.repos.d/docker.repo')
 
     assert f.exists
     assert f.user == 'root'

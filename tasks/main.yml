@@ -43,17 +43,17 @@
     and ansible_python_version | version_compare('2.7.9', '<')
 
 # Install the Docker Engine
-- include: docker_engine.yml
+- include_tasks: docker_engine.yml
   when: not skip_engine
 
 # Install docker-py
-- include: docker_py.yml
+- include_tasks: docker_py.yml
   when: not skip_docker_py
 
 # Adds the Docker admin users to the Docker group
-- include: docker_group.yml
+- include_tasks: docker_group.yml
   when: not skip_group
 
 # Setup the Docker Swarm Cluster
-- include: swarm_cluster.yml
+- include_tasks: swarm_cluster.yml
   when: not skip_swarm

@@ -1,7 +1,9 @@
 ---
 
-default_docker_dependencies:
-  - linux-image-extra-virtual
+# This isn't a thing anymore with Xenial and Stretch.
+#default_docker_dependencies:
+#  - linux-image-extra-virtual
+default_docker_dependencies: []
 
 python_pip_packages:
   - python-pip
